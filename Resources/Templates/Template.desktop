@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Comment=%1
+Terminal=false
+Name=%2
+Exec=chromium-browser --app=%3
+Type=Application
+Icon=%4
