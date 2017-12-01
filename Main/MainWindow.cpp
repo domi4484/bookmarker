@@ -5,7 +5,15 @@
 
 //-----------------------------------------------------------------------------------------------------------------------------
 
-const QString MainWindow::_CONST::DEFAULT_LAUNCHER_LOCATION (".local/share/applications");
+const QString MainWindow::_CONST::APPDATA::LOCATION (".local/share/bookmarker");
+
+const QString MainWindow::_CONST::APPDATA::ICON::LOCATION = QString("%1/icons").arg(MainWindow::_CONST::APPDATA::LOCATION);
+const QString MainWindow::_CONST::APPDATA::ICON::PREFIX   ("%1");
+
+const QString MainWindow::_CONST::LAUNCHER::LOCATION (".local/share/applications");
+const QString MainWindow::_CONST::LAUNCHER::PREFIX   ("bookmarker_");
+
+const QString MainWindow::_CONST::RESOURCES::TEMPLATE (":/templates/Template.desktop");
 
 //-----------------------------------------------------------------------------------------------------------------------------
 
@@ -25,3 +33,7 @@ MainWindow::~MainWindow()
 
 //-----------------------------------------------------------------------------------------------------------------------------
 
+void MainWindow::on_m_QPushButton_Save_clicked()
+{
+
+}
